@@ -1,0 +1,25 @@
+{
+  "name": "context-server",
+  "version": "0.0.0",
+  "description": "Sync json-context instances via WebSockets using sock.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmckegg/context-server.git"
+  },
+  "dependencies": {
+    "shoe": "~0.0.7"
+  },
+  "keywords": [
+    "realtime-templates",
+    "data binding",
+    "sync",
+    "websocket",
+    "json-context"
+  ],
+  "author": "Matt McKegg",
+  "license": "MIT"
+}
