@@ -43,13 +43,12 @@ module.exports = function(server, options){
     contextServer.emit('end')
   }
 
-  contextServer.add = function(datasource, cb){
-    generateKey(function(err, token){ if(err)return cb&&cb(err)
-      datasource.data.token = token
-      userDatasources[token] = datasource
-      unuse(datasource)
-      cb(null, token)
-    })
+  contextServer.add = function(datasource){
+    var token = generateKey()
+    datasource.data.token = token
+    userDatasources[token] = datasource
+    unuse(datasource)
+    return token
   }
 
   contextServer.generateKey = generateKey
