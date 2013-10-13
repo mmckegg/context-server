@@ -11,7 +11,8 @@
     "url": "https://github.com/mmckegg/context-server.git"
   },
   "dependencies": {
-    "shoe": "~0.0.7"
+    "shoe": "~0.0.7",
+    "json-context": "*"
   },
   "keywords": [
     "realtime-templates",
