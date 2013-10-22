@@ -1,6 +1,6 @@
 {
   "name": "context-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Sync json-context instances via WebSockets using sock.js",
   "main": "index.js",
   "scripts": {
