@@ -20,9 +20,9 @@ module.exports = function(datasourceOrToken, options){
     connection.write(token + '\n')
 
     var changeStream = datasource.changeStream({verifiedChange: true})
+    connection.pipe(changeStream).pipe(connection)
 
     if (requestAll) changeStream.requestAll()
-    connection.pipe(changeStream).pipe(connection)
 
     return datasource
   }
