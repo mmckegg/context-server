@@ -1,7 +1,7 @@
 context-server
 ===
 
-Sync json-context instances via WebSockets using sock.js
+Sync [contextdb](https://github.com/mmckegg/contextdb) / [json-context](https://github.com/mmckegg/json-context) instances via WebSockets using sock.js
 
 ## Install
 
